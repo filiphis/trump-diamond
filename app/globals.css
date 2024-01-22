@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #000000;
+    --text-color: #ffffff;
+    /* --lading-page-backgroundColord: red; */
+    --foreground: #403f4c;
+
+    --radius: 0.5rem;
+  }
+
+
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    /* background-color: #ff8097; */
+    border-radius: 20px;
+  }
+
+
+  body::-webkit-scrollbar-track {
+    /* background: #ffd6dd; */
+  }
+
+}
+
+@layer base {
+  .landing-page-body-styles {
+    @apply bg-background text-foreground min-h-screen
+  }
+
+  .content-wrapper-col {
+    @apply max-w-screen-xl mx-[6vw] py-[4vh] md:py-[5vh] xl:py-[6vh] gap-[4vh];
+  }
+
+  .full-screen {
+    @apply w-full min-h-screen
+  }
+
+  /* .padding-firstAndLastElement {
+    @apply py-[4vh] md:py-[5vh] xl:py-[8vh]
+  } */
+
+  .section-col {
+    @apply w-full flex flex-col justify-around items-center min-h-[94vh] md:min-h-screen px-[6vw] pb-[2vh] md:py-0 gap-3;
+  }
+
+
+  .section-col-content {
+    @apply w-full flex flex-col justify-around items-center px-[1vw];
+  }
+
+  .section-row {
+    @apply w-full flex flex-row justify-center items-start;
+  }
+
+  .section-reverse {
+    @apply flex flex-col-reverse justify-start items-center;
+  }
+
+  .section-aboveTheFold {
+    background-color: #ffffff;
+    /* background: linear-gradient(0deg, #FFF0F3 0%, #FFB3C1 100%); */
+  }
+
+  /* Seções */
+
+  /* ModuloECurso */
+  .section-moduloECurso {
+    background-color: #403F4C;
+    /* background: linear-gradient(0deg, #403f4c 0%, #403F4C 100%); */
+  }
+
+  .text-paragraph {
+    @apply text-[1.2rem] md:text-[1.4rem] leading-7 text-left text-[#0d0d0d];
+  }
+
+
+
+  .heading-aboveTheFold {
+    @apply text-[2.5rem] md:text-[2.5rem] xl:text-[3rem] text-center leading-[1.1] font-extrabold text-[#287053] w-full max-w-[1000px] min-w-[320px] antialiased;
+  }
+
+  .heading {
+    @apply text-[2rem] md:text-[2.5rem] xl:text-[3rem] text-center leading-[1.1] font-extrabold w-full max-w-[1000px] min-w-[320px] antialiased;
+  }
+
+  .text-shadow {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+}
